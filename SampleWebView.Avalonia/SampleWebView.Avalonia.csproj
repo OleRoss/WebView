@@ -44,6 +44,7 @@
     <PackageReference Include="Avalonia.ReactiveUI" />
     <PackageReference Include="Avalonia.Themes.Fluent" />
     <PackageReference Include="Dotnet.Bundle" />
+    <PackageReference Include="FluentAvaloniaUI" />
   </ItemGroup>
 
   <ItemGroup>

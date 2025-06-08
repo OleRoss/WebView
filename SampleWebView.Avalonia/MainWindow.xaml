@@ -55,9 +55,13 @@
                         <KeyBinding Gesture="Enter" Command="{Binding NavigateCommand}" />
                     </TextBox.KeyBindings>
                 </TextBox>
+                <Button Click="ShowDialog_OnClick" DockPanel.Dock="Right" Content="Show Dialog" />
             </DockPanel>
 
-            <webview:WebView x:Name="webview" Focusable="True" Address="{Binding CurrentAddress}" />
+            <webview:WebView x:Name="webview" Focusable="True" Address="{Binding CurrentAddress}"
+                             Height="400" Width="400"
+                             ZIndex="-10"
+                             HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </DockPanel>
     </Panel>
 </Window>
