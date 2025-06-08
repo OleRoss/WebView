@@ -58,10 +58,14 @@
                 <Button Click="ShowDialog_OnClick" DockPanel.Dock="Right" Content="Show Dialog" />
             </DockPanel>
 
-            <webview:WebView x:Name="webview" Focusable="True" Address="{Binding CurrentAddress}"
-                             Height="400" Width="400"
-                             ZIndex="-10"
-                             HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Canvas>
+                <webview:WebView x:Name="webview" Focusable="True" Address="{Binding CurrentAddress}"
+                                 Height="400" Width="400"
+                                 ZIndex="-10"
+                                 HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Rectangle Width="600" Height="600" ZIndex="100" Stroke="Red" StrokeThickness="4"
+                           HorizontalAlignment="Left" VerticalAlignment="Top" />
+            </Canvas>
         </DockPanel>
     </Panel>
 </Window>
